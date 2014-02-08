@@ -2785,3 +2785,21 @@ ul.children li:after, ul.sub-menu li:after {
 .gototop_footer:hover{
     opacity: 1;
 }
+
+/*******Custom*********/
+
+.left_content .entry.portfolio .entry_media {
+ width: 220px;
+ position: fixed;
+ right: 30px;
+ }
+.entry.portfolio footer .meta_like {display:none;}
+
+footer span.entry_category a {pointer-events: none; cursor: default;}
+ .textWhite h1, .textWhite h2, .textWhite h3, .textWhite h4, .textWhite h5, .textWhite h6, .textWhite p, .textWhite a, .textWhite ul li {
+ color: #fff;
+ }
+ .textWhite .blox_elem_content_box {background-color: rgba(0, 0, 0, .7);}
+ 
+ ul.menu li:nth-child(4) a {color:#fff;}
+.grid_entry footer {overflow: hidden;}

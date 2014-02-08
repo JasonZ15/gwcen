@@ -114,7 +114,7 @@ while (have_posts()) : the_post();
                                                 <ul class="next_prev_list inline_list">
                                                     <li><?php previous_post_link('%link', __('<i class="icon-chevron-left"></i>', 'themeton')); ?></li>
                                                     <?php if ($smof_data['portfolio_page'] && $smof_data['portfolio_page'] != 'Select a page:') : ?>
-                                                        <li><a href="<?php echo get_permalink(get_page_by_path($smof_data['portfolio_page'])); ?>"><i class="icon-th"></i></a></li>
+                                                        <li><a href="<?php echo get_permalink( 2979 ); ?>"><i class="icon-th"></i></a></li>
                                                     <?php endif; ?>
                                                     <li><?php next_post_link('%link', __('<i class="icon-chevron-right"></i>', 'themeton')); ?></li>
                                                 </ul>

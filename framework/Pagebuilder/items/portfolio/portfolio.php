@@ -192,9 +192,21 @@ function blox_portfolio_parse_hook($atts) {
             if ($cat_filter_html != '') {
                 $result = $title.'<div class="row"><div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
                                     <div class="post-filter">
-                                        <ul>
+                                        <ul style="padding-bottom: 5px;">
                                             <li><a href="javascript:;" title="All" data-filter="all" class="active">All</a></li>
-                                            ' . $cat_filter_html . '
+                                            <li><a href="javascript:;" title="USA" data-filter="filter-europe-america">USA</a></li>
+                                            <li><a href="javascript:;" title="China" data-filter="filter-china">China</a></li>
+                                        </ul>
+                                        <ul>
+                                            <li><a href="javascript:;" title="Platform" data-filter="filter-platform">Platform</a></li>
+                                            <li><a href="javascript:;" title="Advertising" data-filter="filter-advertising">Advertising</a></li>
+                                            <li><a href="javascript:;" title="Marketing" data-filter="filter-marketing">Marketing</a></li>
+                                            <li><a href="javascript:;" title="Connected Device" data-filter="filter-connected-device">Connected Device</a></li>
+                                            <li><a href="javascript:;" title="Payments" data-filter="filter-payments">Payments</a></li>
+                                            <li><a href="javascript:;" title="Investment" data-filter="filter-investment">Investment</a></li>
+                                            <li><a href="javascript:;" title="Analytics" data-filter="filter-analytics">Analytics</a></li>
+                                            <li><a href="javascript:;" title="Hardware" data-filter="filter-hardware">Hardware</a></li>
+                                            <li><a href="javascript:;" title="Other" data-filter="filter-others-2">Other</a></li>
                                         </ul>
                                     </div>
                                 </div></div>'.$result;

@@ -1405,7 +1405,8 @@ function themeton_customcss_hook() {
     }
     if (isset($smof_data['menu_text_hover_color']) && $smof_data['menu_text_hover_color'] != '') {
         echo ".wide_menu ul.menu li a:hover,nav.mainmenu ul.menu li a:hover,ul.menu li a:hover,.icon_menu ul.menu li a:hover, ul.menu li a.active{color:".$smof_data['menu_text_hover_color'] . "}\n";
-    }
+    		echo ".wide_menu ul.menu li a.blox_elem_button:hover,nav.mainmenu ul.menu li a.blox_elem_button:hover,ul.menu li a.blox_elem_button:hover,.icon_menu ul.menu li a.blox_elem_button:hover, ul.menu li a.active.blox_elem_button{background-color:#f4f4f4;color:#dd3a2e}\n";
+	}
     
     /* Link color */
     if (isset($smof_data['link_color']) && $smof_data['link_color'] != '#00b4cc')

@@ -81,6 +81,7 @@ function blox_parse_carousel_hook($atts, $content = null) {
     $args = array(
         'post_type' => $post_type,
         'numberposts' => (int) $count,
+        'posts_per_page' => 8,
         'ignore_sticky_posts' => 1
     );
 
@@ -145,18 +146,13 @@ function blox_parse_carousel_hook($atts, $content = null) {
 
             $html .= '<div class="carousel_item">
                         <article itemscope itemtype="http://schema.org/BlogPosting" class="entry clearfix">
-                                ' . hover_featured_image(get_the_ID(), 'both', true, 235, 160) . '
+                                '.hover_featured_image(get_the_ID(), $overlay, true, $image_width, $image_height).'
                                 <div class="entry_title">
-                                <h2 itemprop="headline"><a itemprop="url" href="' . get_permalink() . '">' . get_the_title() . '</a></h2>
-                            </div>
-                            <div class="entry_meta">
-                                <span class="meta_author">' . __("BY ", "themeton") . get_author_posts_link() . '</span>
-                                <span itemprop="keywords" class="entry_category">' . __("IN ", "themeton") . get_the_category_list(', ') . '</span>
-                            </div>
+                                	<h2 style="height:18px;" itemprop="headline"><a itemprop="url" href="' . get_permalink() . '">' . get_the_title() . '</a></h2>
+                                </div>
                             <footer class="clearfix">
-                                <span itemprop="dateCreated" class="meta_date pull-left">' . date_i18n("M j, Y", strtotime(get_the_date())) . '</span>
-                                <span class="meta_like pull-right"><a href="javascript:;" rel="post-like-' . get_the_ID() . '" class="' . blox_post_liked(get_the_ID()) . '"><i class="icon-heart"></i> <span>' . (int) blox_getmeta(get_the_ID(), 'post_like') . '</span></a></span>
-                                <span itemprop="comment" class="meta_comment pull-right">' . comment_count_grid() . '</span>
+                               <span itemprop="keywords" class="entry_category pull-left">' . get_the_term_list(get_the_ID(), 'portfolio_entries', '', ', ') . '</span>
+ +                             <span class="meta_like pull-right"><a href="javascript:;" pid="'.get_the_ID().'" class="'.blox_post_liked(get_the_ID()).'"></a></span>
                             </footer>
                         </article>
                     </div>';

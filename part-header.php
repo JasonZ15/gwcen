@@ -52,7 +52,15 @@ if ($layout == '1' ||
         <div class="container">
             <div class="row">
                 <div class="col-xs-12 col-sm-12 col-md-4 col-lg-3">
-                    <?php tt_site_logo(); ?>
+                               <?php
+                         if (isset($post) && tt_getmeta('wp_page_template') == 'page-one-page.php') {
+                             //render_mega_nav('onepage_nav' . $post->ID);
+                             tt_site_logo();
+                         } else {
+                            echo "<div id='logo'><a href='http://en.gwc.net/network/'><img src='http://en.gwc.net/wp-content/uploads/2013/11/gwc-logo-hi-res-copy-copy.png' alt='GWC'></a></div>";
+ 					
+                         }
+                         ?>
                 </div>
                 <div class="col-xs-12 col-sm-12 col-md-8 col-lg-9">
                     <div class="<?php echo $menutype . $onlyicon.$dark_sub_menu; ?> align_right">
