@@ -106,4 +106,27 @@ ul#menu ul {padding-left:0;float:left;margin-top:0;}
 .slicknav_menu {z-index: 999999999999;
 position: absolute; 
 width: 100%;}
+#gmic-beijing .slicknav_menu {position: fixed; padding-top: 6px;
+padding-bottom: 10px;}
 .slicknav_menu ul.slicknav_nav ul {float:none;} 
+
+ 
+.thegmic #menu ul li.chinese, .thegmic #menu ul li.english {position: relative;
+overflow: hidden;
+width: 21px;
+height: 21px;
+padding: 0px;
+clear: none;
+margin: 4px 1px 5px 0px;
+display: inline-block;
+zoom: 1;margin: 0;
+height: 23px;
+width: 55px;}
+.thegmic #menu ul li.chinese a {background: transparent url("http://beijing.thegmic.com/wp-content/themes/2014/images/language-menu.jpg") left -4px no-repeat;
+height: 30px;
+width: 55px;
+display: block;}
+.thegmic #menu ul li.english a {background: transparent url("http://beijing.thegmic.com/wp-content/themes/2014/images/language-menu.jpg") right -4px no-repeat;
+height: 30px;
+width: 55px;
+display: block;}

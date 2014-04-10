@@ -105,7 +105,7 @@
             <li><a href="http://sv.thegmic.com/"><img src="http://en.gwc.net/wp-content/themes/Mana/images/sv.png" /></a></li>
         </ul>
     </li>
-    <li><a href="http://www.gwc.net/network"><img src="http://en.gwc.net/wp-content/themes/Mana/images/member.png" /></a></li>
+    <li><a href="http://en.gwc.net/network"><img src="http://en.gwc.net/wp-content/themes/Mana/images/member.png" /></a></li>
     <li><a href="http://blog.thegmic.com"><img src="http://en.gwc.net/wp-content/themes/Mana/images/blog.png" /></a></li>
     <li style="float:right;"><a href="http://www.gwc.net"><img src="http://en.gwc.net/wp-content/themes/Mana/images/gwc-logo-white-small-copy.png" /></a></li>
 </ul>
