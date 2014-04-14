@@ -53,7 +53,7 @@ if ($layout == '1' ||
             <div class="row">
                 <div class="col-xs-12 col-sm-12 col-md-4 col-lg-3">
                                <?php
-                         if (isset($post) && tt_getmeta('wp_page_template') == 'page-one-page.php') {
+                         if (isset($post) && (tt_getmeta('wp_page_template') == 'page-one-page.php' || 'gwc-home' == get_post_meta( $post->ID, 'page-host', true ) || 'gwc-home' == get_post_meta( $post->post_parent, 'page-host', true )) ) {
                              //render_mega_nav('onepage_nav' . $post->ID);
                              tt_site_logo();
                          } else {

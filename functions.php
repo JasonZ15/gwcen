@@ -516,5 +516,14 @@ function themeton_customize_preview(){
 <?php
 }
 
+add_filter('body_class','krogs_custom_field_body_class');
+function krogs_custom_field_body_class( $classes ) {
+	global $post;
+	if ( is_page() && ( 'gwc-home' == get_post_meta( $post->ID, 'page-host', true ) || 'gwc-home' == get_post_meta( $post->post_parent, 'page-host', true ) ) ) {
+		$classes[] = 'gwc-home';
+	}
+	// return the $classes array
+	return $classes;
+}
 
 ?>
