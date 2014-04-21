@@ -81,7 +81,6 @@ function blox_parse_carousel_hook($atts, $content = null) {
     $args = array(
         'post_type' => $post_type,
         'numberposts' => (int) $count,
-        'posts_per_page' => 8,
         'ignore_sticky_posts' => 1
     );
 
@@ -152,7 +151,7 @@ function blox_parse_carousel_hook($atts, $content = null) {
                                 </div>
                             <footer class="clearfix">
                                <span itemprop="keywords" class="entry_category pull-left">' . get_the_term_list(get_the_ID(), 'portfolio_entries', '', ', ') . '</span>
- +                             <span class="meta_like pull-right"><a href="javascript:;" pid="'.get_the_ID().'" class="'.blox_post_liked(get_the_ID()).'"></a></span>
+                               <span class="meta_like pull-right"><a href="javascript:;" pid="'.get_the_ID().'" class="'.blox_post_liked(get_the_ID()).'"></a></span>
                             </footer>
                         </article>
                     </div>';

@@ -91,12 +91,7 @@ if (tt_getmeta('slider')!='' && tt_getmeta('slider')!='none') { ?>
 		echo '<style> #header .menu{ display:none; } </style>';
 	}
 ?>
-
-
-
-<?php
-get_footer();
-?>
+<!-- this is to build out menu's html -->
 <script type="text/javascript">
 	jQuery(function(){
 		
@@ -141,4 +136,11 @@ get_footer();
         }
         
 	});
+		jQuery(document).ready(function() {
+				jQuery('.home .mainmenu .menu li:first-child').append('<ul><li><a href="http://en.gwc.net/mission-vision-values/"><span class=""></span>Mission</a><span class="menu_arrow" style="left: 31px;"></span></li><li><a href="http://en.gwc.net/history/"><span class=""></span>History</a><span></span></li></ul>');
+			});
 </script>
+<!-- script.js will give behavior to the menu -->
+<?php
+get_footer();
+?>
